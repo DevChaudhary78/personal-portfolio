@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Alkatra', cursive;
+}
+
+body {
+    background-color: #EAE000;
+}
+
+header > #main-title > #title {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
