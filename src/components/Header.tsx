@@ -22,9 +22,11 @@ export default function Header(): JSX.Element {
     return(
         <header className={styles.header}>
             <div>
-                <div className={styles.title} ref={containerRef} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} >
-                    नमस्ते 🙏🏻
-                </div>
+                <a href="https://www.wikiwand.com/en/Namaste" className={styles.title_link}>
+                    <div className={styles.title} ref={containerRef} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} >
+                        नमस्ते 🙏🏻
+                    </div>
+                </a>
                 <div>
                     Hello, my name is Dev Chaudhary, and I am gonna be "King of the Pirates" 👑
                 </div>

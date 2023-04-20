@@ -11,7 +11,12 @@
     text-shadow: 4px 2px 8px black;
 }
 
+.title_link {
+    text-decoration: none;
+    color: black;
+}
+
 .profile_pic {
     border-radius: 50%;
-    box-shadow: 6px 4px 12px black;
+    box-shadow: 10px 10px 30px 3px black;
 }
