@@ -1,5 +1,5 @@
 import Image from "next/image"
-import React, {useRef} from "react"
+import React, {useRef, useState} from "react"
 
 import styles from "./Header.module.css"
 
@@ -13,10 +13,16 @@ export default function Header(): JSX.Element {
         }
     }
 
+    function handleMouseLeave() {
+        if(containerRef.current) {
+            containerRef.current.textContent = "नमस्ते 🙏🏻"
+        }
+    }
+
     return(
         <header className={styles.header}>
             <div>
-                <div className={styles.title} ref={containerRef} onMouseOver={handleMouseOver}>
+                <div className={styles.title} ref={containerRef} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} >
                     नमस्ते 🙏🏻
                 </div>
                 <div>
@@ -24,7 +30,7 @@ export default function Header(): JSX.Element {
                 </div>
             </div>
             <div>
-                <Image className={styles.profile_pic} src="/personal-pic.jpg" alt="This is just my personal portfolio personal pic (:" height={250} width={250} />
+                <Image className={styles.profile_pic} src="/imgs/dog-pic.jpg" alt="This is just my personal portfolio personal pic (:" height={180} width={180} />
             </div>
         </header>
     );
