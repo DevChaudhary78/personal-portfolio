@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.profile_pic {
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px black;
+}
