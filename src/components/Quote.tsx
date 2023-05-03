@@ -7,14 +7,14 @@ type Quote = {
 }
 
 export default function Quote() {
-    const [quotes, setQuotes] = useState<Quote[]>([])
+    const [quote, setQuote] = useState<Quote>()
 
     useEffect(() => {
         async function fetchQuotes() {
-            const response = await fetch("/api/quotes")
+            const response = await fetch("/api/random_quote")
             const data = await response.json()
             console.log(data)
-            setQuotes(data)
+            setQuote(data)
         }
 
         fetchQuotes()
@@ -22,13 +22,11 @@ export default function Quote() {
 
     return(
         <div>
-            {quotes.map((quote, index) => (
-                <div key={index}>
-                    <h2>{quote.speaker}</h2>
-                    <p>{quote.quote}</p>
-                    <p>{quote.anime}</p>
-                </div>
-            ))}
+            <div>
+                <h2>{quote?.speaker}</h2>
+                <p>{quote?.quote}</p>
+                <p>{quote?.anime}</p>
+            </div>
         </div>
     )
 }
