@@ -1,13 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-import quotes from "../../assets/quotes"
-
-type Quote = {
-    quote: String
-    speaker: String
-    anime: String
-}
+import {quotes, Quote} from "../../assets/quotes"
 
 export default function handler(
     req: NextApiRequest,

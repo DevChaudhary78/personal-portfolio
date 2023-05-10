@@ -1,10 +1,10 @@
-type Quote = {
+export type Quote = {
     quote: String
     speaker: String
     anime: String
 }
 
-const quotes: Quote[] = [
+export const quotes: Quote[] = [
     {
         quote: "Knowing what it feels to be in pain, is exactly why we try to be kind to others.",
         speaker: "Jiraya",
@@ -181,5 +181,3 @@ const quotes: Quote[] = [
         anime: "Final Fantasy XIII"
     },
 ]
-
-export default quotes

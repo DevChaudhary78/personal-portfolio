@@ -1,12 +1,7 @@
 import {useState, useEffect} from "react"
 
 import styles from "./styles/Quote.module.css"
-
-type Quote = {
-    speaker: String
-    quote: String
-    anime: String
-}
+import {Quote} from "../assets/quotes"
 
 export default function Quote() {
     const [quote, setQuote] = useState<Quote>()

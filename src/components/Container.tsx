@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 import styles from "./styles/Card.module.css";
+import {cards, Card} from "../assets/cards"
 
 export default function Container() {
     return (
