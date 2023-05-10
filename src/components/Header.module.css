@@ -8,7 +8,7 @@
     font-size: 5rem;
     font-weight: bolder;
     cursor: pointer;
-    text-shadow: 4px 2px 8px black;
+    /* text-shadow: 4px 2px 8px black; */
 }
 
 .title_link {
