@@ -36,14 +36,14 @@ export default function Header(): JSX.Element {
                         </div>
                     </a>
                     <div>
-                        Hello, my name is Dev Chaudhary, and I am gonna be "King
-                        of the Pirates" 👑
+                        Hello, my name is Dev Chaudhary, and I am gonna be King
+                        of the Pirates 👑
                     </div>
                 </div>
                 <div>
                     <Image
                         className={styles.profile_pic}
-                        src="/imgs/dog-pic.jpg"
+                        src="/imgs/dp.jpg"
                         alt="This is just my personal portfolio personal pic (:"
                         height={180}
                         width={180}
