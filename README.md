@@ -1,1 +1,1 @@
-This is just a sqash commit readme
+<h1>Visit my portfolio by clicking here 👉🏻 <a href="https://devchaudhary.vercel.app">https://devchaudhary.vercel.app/</a></h1>
