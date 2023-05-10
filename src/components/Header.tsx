@@ -55,7 +55,7 @@ export default function Header(): JSX.Element {
                 <a href="#">
                 <Image
                     className={styles.message_pic}
-                    src="/imgs/telegram.png"
+                    src="/icons/telegram.svg"
                     alt="Contact me"
                     height={64}
                     width={64}
