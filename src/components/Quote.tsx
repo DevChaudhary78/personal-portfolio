@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react"
 
-import styles from "./Quote.module.css"
+import styles from "./styles/Quote.module.css"
 
 type Quote = {
     speaker: String
