@@ -52,7 +52,7 @@ export default function Header(): JSX.Element {
             </header>
 
             <div>
-                <a href="#">
+                <a href="mailto:dev-ashokbhai.chaudhary@mohawkcollege.ca">
                 <Image
                     className={styles.message_pic}
                     src="/icons/telegram.svg"
