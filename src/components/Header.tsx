@@ -35,7 +35,7 @@ export default function Header(): JSX.Element {
                             नमस्ते 🙏🏻
                         </div>
                     </a>
-                    <div>
+                    <div className={styles.sub_title}>
                         Hello, my name is Dev Chaudhary, and I am gonna be King
                         of the Pirates 👑
                     </div>

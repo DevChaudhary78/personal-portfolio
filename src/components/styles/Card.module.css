@@ -6,11 +6,9 @@
 }
 
 .card {
-    min-height: 300px;
     min-width: 400px;
-
-    max-height: 500px;
     max-width: 650px;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -39,4 +37,23 @@
 
 .arrows:hover {
     scale: 1.2;
+}
+
+@media only screen and (max-width: 600px) {
+    .card_container {
+        flex-direction: column;
+    }
+
+    .sub_title {
+        display: none;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .card {
+        min-width: 200px;
+        max-width: 400px;
+    }
 }

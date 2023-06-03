@@ -32,3 +32,17 @@
 .message_pic:hover {
     scale: 1.2;
 }
+
+@media only screen and (max-width: 600px) {
+    .title {
+        display: none;
+    }
+
+    .sub_title {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+    }
+}

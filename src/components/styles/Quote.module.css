@@ -8,7 +8,7 @@
 }
 
 .quote {
-    font-weight: bolder;
+    font-weight: normal;
     font-style: italic;
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
@@ -24,7 +24,23 @@
 
 .quote_speaker {
     float: right;
-    font-size: small;
+    font-size: 1rem;
     font-weight: bold;
     margin-right: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .quote {
+        font-size: 1rem;
+    }
+
+    .quote_speaker {
+        font-size: 0.5rem;
+        float: inline-end;
+    }
+
+    .quote_icon {
+        height: 20px;
+        width: 20px;
+    }
 }
