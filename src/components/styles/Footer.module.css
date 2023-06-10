@@ -22,6 +22,12 @@
     width: 40%;
 }
 
+.icon {
+    background-color: #e0e1dd;
+    border-radius: 50%;
+    padding: 4px;
+}
+
 .socials > a:hover {
     scale: 1.2;
 }

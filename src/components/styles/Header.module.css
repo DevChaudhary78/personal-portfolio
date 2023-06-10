@@ -8,6 +8,7 @@
     font-size: 5rem;
     font-weight: bolder;
     cursor: pointer;
+    color: #e0e1dd;
 }
 
 .title_link {
@@ -27,6 +28,8 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 .message_pic:hover {

@@ -17,7 +17,6 @@ export default function Container() {
                     />
                 ))
             }
-
             <a href="#" ><Image className={styles.arrows} src="/imgs/arrow-right.png" alt="This is just a right arrow" width={40} height={40} /></a>
         </div>
     );
