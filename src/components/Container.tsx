@@ -11,6 +11,8 @@ export default function Container() {
             <button className={styles.arrow_container} onClick={() => {
                 if(currentIdx > 0) {
                     setCurrentIdx(currentIdx-1)
+                } else {
+                    setCurrentIdx(cards.length-1)
                 }
             }}><Image className={styles.arrows} src="/imgs/arrow-left.png" alt="This is just a left arrow" width={40} height={40} /></button>
 
@@ -19,6 +21,8 @@ export default function Container() {
             <button className={styles.arrow_container} onClick={() => {
                 if(currentIdx < cards.length - 1) {
                     setCurrentIdx(currentIdx+1)
+                } else {
+                    setCurrentIdx(0)
                 }
             }}><Image className={styles.arrows} src="/imgs/arrow-right.png" alt="This is just a right arrow" width={40} height={40} /></button>
         </div>
