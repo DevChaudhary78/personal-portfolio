@@ -16,7 +16,8 @@
     align-items: center;
     border-radius: 20px;
     padding: 1rem;
-    margin: 2rem;
+    margin: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.5);
 }
 
 .card_title {
@@ -38,6 +39,12 @@
 
 .arrows:hover {
     scale: 1.2;
+}
+
+.arrow_container {
+    background-color: #1b263b;
+    border: none;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
