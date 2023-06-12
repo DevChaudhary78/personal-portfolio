@@ -4,21 +4,22 @@
     align-items: center;
     width: 100vw;
     color: black;
+
+    .card {
+        min-width: 400px;
+        max-width: 650px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 1.5rem;
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.5);
+    }
 }
 
-.card {
-    min-width: 400px;
-    max-width: 650px;
-    height: auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    padding: 1rem;
-    margin: 1.5rem;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.5);
-}
 
 .card_title {
     font-size: 1.2rem;
