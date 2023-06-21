@@ -1,29 +1,45 @@
 import Image from "next/image"
 
-import styles from "./styles/Card.module.css";
-import {cards, Card} from "../assets/cards"
+import styles from "../styles/Card.module.scss";
+import {cards} from "../assets/cards"
 import { useState } from "react";
 
 export default function Container() {
-    var [currentIdx, setCurrentIdx] = useState(0);
+    var [mainIdx, setMainIdx] = useState(0);
+    var [secondIdx, setSecondIdx] = useState(mainIdx+1)
     return (
         <div className={styles.card_container}>
             <button className={styles.arrow_container} onClick={() => {
-                if(currentIdx > 0) {
-                    setCurrentIdx(currentIdx-1)
+                if(mainIdx > 0) {
+                    setMainIdx(mainIdx-1)
                 } else {
-                    setCurrentIdx(cards.length-1)
+                    setMainIdx(cards.length-1)
+                }
+
+                if(secondIdx > 0) {
+                    setSecondIdx(secondIdx-1)
+                } else {
+                    setSecondIdx(cards.length-1)
                 }
             }}><Image className={styles.arrows} src="/imgs/arrow-left.png" alt="This is just a left arrow" width={40} height={40} /></button>
 
-            <CardContainer key={`${cards[currentIdx].title}-$${cards[currentIdx].emoji}`} backgroundColor={cards[currentIdx].backgroundColor} title={cards[currentIdx].title} emoji={cards[currentIdx].emoji} text={cards[currentIdx].text} />
+            <CardContainer key={`${cards[mainIdx].title}-$${cards[mainIdx].emoji}`} backgroundColor={cards[mainIdx].backgroundColor} title={cards[mainIdx].title} emoji={cards[mainIdx].emoji} text={cards[mainIdx].text} />
             
+            <CardContainer key={`${cards[secondIdx].title}-$${cards[secondIdx].emoji}`} backgroundColor={cards[secondIdx].backgroundColor} title={cards[secondIdx].title} emoji={cards[secondIdx].emoji} text={cards[secondIdx].text} />
+
             <button className={styles.arrow_container} onClick={() => {
-                if(currentIdx < cards.length - 1) {
-                    setCurrentIdx(currentIdx+1)
+                if(mainIdx < cards.length - 1) {
+                    setMainIdx(mainIdx+1)
                 } else {
-                    setCurrentIdx(0)
+                    setMainIdx(0)
                 }
+
+                if(secondIdx < cards.length - 1) {
+                    setSecondIdx(secondIdx+1)
+                } else {
+                    setSecondIdx(0)
+                }
+
             }}><Image className={styles.arrows} src="/imgs/arrow-right.png" alt="This is just a right arrow" width={40} height={40} /></button>
         </div>
     );

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 
-import styles from "./styles/Header.module.css";
+import styles from "../styles/Header.module.scss";
 
 export default function Header(): JSX.Element {
     const containerRef = useRef<HTMLDivElement>(null);

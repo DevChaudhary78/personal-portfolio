@@ -2,14 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     color: black;
 }
 
 .card {
-    min-width: 400px;
-    max-width: 650px;
-    height: auto;
+    height: 300px;
+    width: 500px;
 
     display: flex;
     flex-direction: column;
