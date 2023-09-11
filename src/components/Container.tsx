@@ -23,7 +23,7 @@ export default function Container() {
                 }
             }}><Image className={styles.arrows} src="/imgs/arrow-left.png" alt="This is just a left arrow" width={40} height={40} /></button>
 
-            <CardContainer key={`${cards[mainIdx].title}-$${cards[mainIdx].emoji}`} backgroundColor={cards[mainIdx].backgroundColor} title={cards[mainIdx].title} emoji={cards[mainIdx].emoji} text={cards[mainIdx].text} />
+            <CardContainer key={`${cards[mainIdx].title}-$${cards[mainIdx].emoji}`} backgroundColor={cards[mainIdx].backgroundColor} title={cards[mainIdx].title} emoji={cards[mainIdx].emoji} text={cards[mainIdx].text}  />
             
             <CardContainer key={`${cards[secondIdx].title}-$${cards[secondIdx].emoji}`} backgroundColor={cards[secondIdx].backgroundColor} title={cards[secondIdx].title} emoji={cards[secondIdx].emoji} text={cards[secondIdx].text} />
 
@@ -45,7 +45,7 @@ export default function Container() {
     );
 }
 
-function CardContainer({ backgroundColor, title, emoji, text}: {backgroundColor: string, title: string, emoji: string, text: string}) {
+function CardContainer({ backgroundColor, title, emoji, text}: {backgroundColor: string, title: string, emoji: string, text: string,}) {
     return(
         <div className={styles.card} style={{ backgroundColor }}>
             <h2 className={styles.card_title}>{title} {emoji}</h2>

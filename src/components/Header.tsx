@@ -43,7 +43,7 @@ export default function Header(): JSX.Element {
                 <div>
                     <Image
                         className={styles.profile_pic}
-                        src="/imgs/profile_pic.jpg"
+                        src="/imgs/dp.jpg"
                         alt="This is just my personal portfolio personal pic (:"
                         height={180}
                         width={180}
