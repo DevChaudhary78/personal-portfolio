@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 
-import styles from "./styles/Header.module.css";
+import styles from "../styles/Header.module.scss";
 
 export default function Header(): JSX.Element {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -43,7 +43,7 @@ export default function Header(): JSX.Element {
                 <div>
                     <Image
                         className={styles.profile_pic}
-                        src="/imgs/profile_pic.jpg"
+                        src="/imgs/dp.jpg"
                         alt="This is just my personal portfolio personal pic (:"
                         height={180}
                         width={180}

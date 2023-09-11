@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react"
 
-import styles from "./styles/Quote.module.css"
+import styles from "../styles/Quote.module.scss"
 import {Quote} from "../assets/quotes"
 
 export default function Quote() {

@@ -2,24 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     color: black;
-
-    .card {
-        min-width: 400px;
-        max-width: 650px;
-        height: auto;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 20px;
-        padding: 1rem;
-        margin: 1.5rem;
-        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.5);
-    }
 }
 
+.card {
+    height: 300px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.5);
+}
 
 .card_title {
     font-size: 1.2rem;
@@ -43,7 +41,7 @@
 }
 
 .arrow_container {
-    background-color: #1b263b;
+    background-color: #1d3557;
     border: none;
     cursor: pointer;
 }
@@ -58,8 +56,7 @@
     }
 
     .arrows {
-        /* display: none; */
-        rotate: 90deg;
+        display: none;
     }
 
     .card {
