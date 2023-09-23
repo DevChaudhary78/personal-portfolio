@@ -6,10 +6,11 @@ import Footer from "../components/Footer"
 export default function Home() {
   return (
     <>
-        <Header />
-        <Quote />
-        <Container />
-        <Footer />
+      <link rel="icon" href="logo.png" />
+      <Header />
+      <Quote />
+      <Container />
+      <Footer />
     </>
   )
 }
