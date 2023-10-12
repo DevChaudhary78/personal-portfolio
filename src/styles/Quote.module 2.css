@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.quote_container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.quote {
+    font-weight: normal;
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 80px;
+}
+
+.quote_icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.quote_speaker {
+    float: right;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .quote {
+        font-size: 1rem;
+    }
+
+    .quote_speaker {
+        font-size: 0.5rem;
+        float: inline-end;
+    }
+
+    .quote_icon {
+        height: 20px;
+        width: 20px;
+    }
+}
