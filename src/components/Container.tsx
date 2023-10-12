@@ -21,7 +21,7 @@ export default function Container() {
                 } else {
                     setSecondIdx(cards.length-1)
                 }
-            }}><Image className={styles.arrows} src="/imgs/arrow-left.png" alt="This is just a left arrow" width={40} height={40} /></button>
+            }}><Image className={styles.arrows} src="/imgs/arrow-left-solid.svg" alt="This is just a left arrow" width={40} height={40} /></button>
 
             <CardContainer key={`${cards[mainIdx].title}-$${cards[mainIdx].emoji}`} backgroundColor={cards[mainIdx].backgroundColor} title={cards[mainIdx].title} emoji={cards[mainIdx].emoji} text={cards[mainIdx].text}  />
             
@@ -40,7 +40,7 @@ export default function Container() {
                     setSecondIdx(0)
                 }
 
-            }}><Image className={styles.arrows} src="/imgs/arrow-right.png" alt="This is just a right arrow" width={40} height={40} /></button>
+            }}><Image className={styles.arrows} src="/imgs/arrow-right-solid.svg" alt="This is just a right arrow" width={40} height={40} /></button>
         </div>
     );
 }
