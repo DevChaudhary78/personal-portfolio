@@ -8,10 +8,11 @@ export default function Footer() {
             <p><span className={styles.help}>Want to help?</span> feel free.</p>
 
             <div className={styles.socials}>
-                <a href="https://github.com/DevChaudhary78"><Image className={styles.icon} src="/icons/github.svg" alt="Github" height={40} width={40} /></a>
-                <a href="https://twitter.com/devchaudhary78"><Image className={styles.icon} src="/icons/twitter.svg" alt="Twitter" height={40} width={40} /></a>
-                <a href="https://www.instagram.com/devchaudhary.78/?next=%2F"><Image className={styles.icon} src="/icons/instagram.svg" alt="Instagram" height={40} width={40} /></a>
-                <a href="https://github.com/DevChaudhary78/personal-portfolio"><Image className={styles.icon} src="/icons/code.png" alt="Code" height={40} width={40} /></a>
+                <a href="https://github.com/DevChaudhary78"><Image className={styles.icon} src="/icons/github.png" alt="Github" height={45} width={45} /></a>
+                <a href="https://twitter.com/devchaudhary78"><Image className={styles.icon} src="/icons/twitter.png" alt="Twitter" height={45} width={45} /></a>
+                <a href="https://www.instagram.com/devchaudhary.78/?next=%2F"><Image className={styles.icon} src="/icons/instagram.png" alt="Instagram" height={45} width={45} /></a>
+                <a href="https://github.com/DevChaudhary78/personal-portfolio"><Image className={styles.icon} src="/icons/rust.png" alt="Code" height={45} width={45} /></a>
+                <a href="https://monkeytype.com/profile/KaKaShi__"><Image className={styles.icon} src="/icons/keyboard.png" alt="monkeytype" height={45} width={45} /></a>
             </div>
         </footer>
     )
