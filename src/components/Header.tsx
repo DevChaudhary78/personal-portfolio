@@ -53,13 +53,13 @@ export default function Header(): JSX.Element {
 
             <div>
                 <a href="mailto:dev-ashokbhai.chaudhary@mohawkcollege.ca">
-                <Image
-                    className={styles.message_pic}
-                    src="/icons/telegram.svg"
-                    alt="Contact me"
-                    height={64}
-                    width={64}
-                /></a>
+                    <Image
+                        className={styles.message_pic}
+                        src="/icons/telegram.svg"
+                        alt="Contact me"
+                        height={64}
+                        width={64}
+                    /></a>
             </div>
         </>
     );
